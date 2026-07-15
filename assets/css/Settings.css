@@ -7,9 +7,12 @@
 html {
     scroll-behavior: smooth;
 }
+abbr{
+    text-decoration: none;
+}
 
 hr {
-    border: 1.5px solid rgb(61, 51, 51);
+    border: 1.5px solid black;
 }
 
 .web_text {
@@ -56,5 +59,19 @@ footer.reveal.active {
     transform: translateY(0);
 }
 /* end reveal */
+/* start box */
+.box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: 40vh auto;
+}
 
+.box h1{
+    font-size: 55px;
+}
+/* end box */
 /* End settings */

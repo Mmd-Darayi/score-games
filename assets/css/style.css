@@ -49,6 +49,7 @@
     top: 0;
     width: 100%;
     z-index: 1;
+    color: wheat;
 }
 
 .nav_box{
@@ -59,22 +60,19 @@
 }
 
 .nav_box a{
-    color: white;
-    font-size: 28px;
+    color: #f8f8f8;
+    font-size: 30px;
     font-weight: 400;
     text-decoration: none;
     align-items: center;
     padding: 0 5px;
     font-family: BNAZANIN;
-    transition-duration: 1ms;
-    border: 1px solid transparent;
 }
 
 .nav_box a:hover{
-    border-color: red !important;
-    transition: all 1.5s ease;
+    color: #9b8d8db4;
+    transition-duration: 1s;
 }
-
 /* End settings */
 
 /* Start header */
@@ -82,7 +80,7 @@
     padding-top: 55px;
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/Sayt.jpg);
-    background-size: 109vh;
+    background-size: 750px 750px;
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -92,9 +90,8 @@
 .header_box{
     color: white;
     width: 85%;
-    padding: 300px 0;
+    padding: 290px 0;
     margin: 0 auto;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .header p{
@@ -113,7 +110,7 @@
 #header_link1{
     color: white;
     border: 2px solid white;
-    padding: 12px 35px;
+    padding: 12px 25px;
     border-radius: 7px;
     text-decoration: none;
 }
@@ -121,11 +118,15 @@
 #header_link2{
     color: white;
     border: 2px solid white;
-    padding: 12px 25px;
+    padding: 12px 12px;
     border-radius: 7px;
     text-decoration: none;
 }
 
+#header_links:hover{
+    background-color: #9b8d8db4;
+    transition-duration: 1s;
+}
 /* End header */
 
 /* Start services */
@@ -161,7 +162,7 @@
     box-shadow: 0 0 8px -1px;
 }
 
-.services p{
+.services .serviec1 p{
     font-family: BNAZANIN;
     margin-top: 20px;
     color: rgb(56, 50, 50);
@@ -186,7 +187,6 @@
 .services_icon {
     font-size: 12px;
 }
-
 /* End services */
 
 /* Start servies */
@@ -253,141 +253,207 @@
 
 /* start contact */
 .contact{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 100px 0;
 }
 
 .contact_box{
     width: 85%;
     margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-}
-
-.contact_form{
-    margin: 50px auto;
-    width: 45%;
 }
 
 .contact_info{
-    width: 45%;
-    padding: 100px 0;
-    display: block;
-}
-
-.contact_form form{
-    padding: 20px 35px;
-    box-shadow: 10px 20px 40px -5px;
-    margin: 0 50px;
-}
-
-.contact_form_title{
-    font-family: BTITRBD;
-    display: block;
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 30px;
-}
-
-.contact_form .input1{
-    font-family: BBADR;
-    display: block;
-    width: 95%;
-    padding: 15px 10px;
-    margin: 10px 0;
-}
-
-.contact_form textarea{
-    display: block;
-    width: 95%;
-    padding: 15px 10px;
-}
-
-.contact_form_sub_btn{
-    padding: 12px 45px;
-    background-color: #1a57a5;
-    color: white;
-    border: none;
-    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact_info_title{
-    font-size: 25px;
-    font-family: BNAZANIN;
     color: black;
+    font-family: BNAZANIN;
+    font-size: 25px;
     font-weight: 700;
     display: block;
 }
 
-.contact_info_text{
-    color: black;
-    margin-bottom: 45px;
+.contact_info_id{
     display: block;
-    width: 45%;
+    margin-bottom: 25px;
+}
+
+.contact-links{
     margin-top: 10px;
-    font-family: BZARBOLD;
+    text-decoration: none;
+    color: gray;
+    display: block;
+    margin-bottom: 15px;
+    margin-top: 5px
+}
+
+.contact-links:hover{
+    color: rgb(59, 51, 51);
+    transition-duration: 0.8s;
+}
+/* end contact */
+
+/* start footer  */
+footer p{
+    margin: 20px;
+    color: rgba(0, 0, 0, 0.767);
+    text-align: center;
+}
+/* end footer  */
+@media (max-width: 480px){
+/* Start nav */
+.nav{
+    padding-top: 15px;
+}
+
+.nav_box{
+    width: 100%;
+}
+
+.nav_box a{
+    font-size: 20px;
+}
+/* End settings */
+/* Start header */
+.header{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../imgs/Sayt2.jpg);
+    background-size: 110vh;
+}
+
+.header_box{
+    width: 100%;
+    padding: 200px 0;
+}
+
+.header_links{
+    margin-top: 30px;
+}
+/* End header */
+
+/* Start services */
+.services{
+    flex-grow: unset;
+}
+
+.services_box1{
+    display: flex;
+    margin: 0 auto;
+    margin: 35px 0;
+}
+
+.serviec1{
+    width: 43%;
+    justify-content: space-between;
+}
+
+.services h3{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.services .serviec1 p{
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.services_link{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.services_icon {
+    font-size: 8px;
+}
+/* End services */
+/* Start servies */
+.servies{
+    flex-grow: unset;
+}
+
+.services_box2{
+    display: flex;
+    margin: 0 auto;
+    margin: 35px 0;
+}
+
+.serviec2{
+    width: 43%;
+    justify-content: space-between;
+}
+
+.serviec2 h3{
+    margin-top: 15px;
+    font-size: 12px;
+}
+
+.serviec2 p{
+    font-size: 12px;
+    line-height: 1.2;
+}
+
+.services_link{
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.services_icon{
+    font-size: 8px;
+}
+/* End services */
+
+/* start contact */
+.contact_box{
+    width: 100%;
+}
+
+.contact_form{
+    width: 60%;
+}
+
+.contact_info{
+    width: 40%;
+}
+
+.contact_form form{
+    width: 50%;
+    padding: 10px 35px;
+}
+
+.contact_form_title{
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact_form .input1{
+    width: 85%;
+    padding: 5px 10px;
+}
+
+.contact_form textarea{
+    width: 85%;
+    padding: 5px 10px;
+}
+
+.contact_info_title{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contact_info_text{
+    margin-bottom: 25px;
+    width: 45%;
+    margin-top: 5px;
 }
 
 .contact_info_text a{
-    text-decoration: none;
-    color: gray;
-    margin-bottom: 8px;
-    display: block;
-    width: 45%;
-    margin-top: 0px;
-}
-
-.contact_info_text a:hover{
-    color: rgb(59, 51, 51);
-    transition-duration: 0.8s;
+    margin-bottom: 5px;
+    width: 80%;
 }
 
 /* end contact */
 
-/* start footer  */
-footer{
-    background-color: #1a57a5;
-    padding: 35px 0;
 }
-
-.footer{
-    width: 100%;
-    margin: 0 auto;
-}
-
-.footer_icons{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 35px;
-}
-
-.footer_icons li a{
-    color: rgba(255, 255, 255, .4);
-    text-decoration: none;
-    font-size: 35px;
-    margin: 0 15px;
-}
-
-.footer_icons li a:hover{
-    color: #fff;
-}
-
-.footer_info{
-    text-align: center;
-    color: white;
-}
-
-.footer_info p{
-    margin: 10px 0;
-}
-
-.footer_info a{
-    text-decoration: none;
-    color: rgba(255, 255, 255, .4);
-}
-
-.footer_info a:hover{
-    color: #fff;
-}
-
-/* end footer  */

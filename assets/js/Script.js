@@ -1,7 +1,7 @@
 window.addEventListener("load", function () {
     const preloader = document.getElementById("preloader");
     preloader.classList.add("loader-hidden");
-                setTimeout(() => {
+    setTimeout(() => {
         preloader.style.display = "none";
     }, 1000);
 });
@@ -11,7 +11,7 @@ function reveal() {
     for (var i = 0; i < reveals.length; i++) {
         var windowHeight = window.innerHeight;
         var elementTop = reveals[i].getBoundingClientRect().top;
-        var elementVisible = 150; 
+        var elementVisible = 150;
         if (elementTop < windowHeight - elementVisible) {
             reveals[i].classList.add("active");
         }
